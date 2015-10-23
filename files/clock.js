@@ -86,13 +86,16 @@ function updateClock ( )
   document.getElementById("presentDay").innerHTML = '<span class="digital green">' + dd + '</span>';
   document.getElementById("presentHour").innerHTML = '<span class="digital green">' + currentHours + '</span>';
   document.getElementById("presentMinute").innerHTML = '<span class="digital green">' + currentMinutes + '</span>';
+console.log(timeOfDay)
   if(timeOfDay == "AM")
   {
 	  document.getElementById("presentAM").innerHTML = '<img src="./files/circleGreenOn.png" width="10" height="10" />';
+	  document.getElementById("presentPM").innerHTML = '<img src="./files/circleGreenOff.png" width="10" height="10" />';
   }
   else
   {
 	  document.getElementById("presentPM").innerHTML = '<img src="./files/circleGreenOn.png" width="10" height="10" />';
+	  document.getElementById("presentAM").innerHTML = '<img src="./files/circleGreenOff.png" width="10" height="10" />';
   }
   
   document.getElementById("presentYear").innerHTML = '<span class="digital green">' + yyyy + '</span>';
